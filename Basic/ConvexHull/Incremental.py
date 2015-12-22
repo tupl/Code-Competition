@@ -10,6 +10,9 @@ from shapely.geometry.polygon import LinearRing
 
 	Below is the implementation of convex hull, a basic algorithm, it follows
 		the pseudocode in Computational Geometry with Application
+
+	Suggestion:
+		Implement our own ccw tester
 '''
 
 # Getting a list of points
