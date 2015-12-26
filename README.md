@@ -14,6 +14,16 @@ The repository will be divided into two basic parts
 	Graham scan (Coming soon)
 	Divide and conquer(Coming soon)
 	Gift Wrapping (Coming soon)
++Template folder: short implementation of all algorithm
+    in language including c++, python, java. The purpose
+    of this one is for quick typing the algorithm to apply
+    for a problem to come up with quick solution.
+	
+    Structure:
+       cpp
+          bit manipulation
+		
+
 +Competition folder:
     Code for various programming competition written
 	in python, java, c with solutions (Maybe good or bad)
