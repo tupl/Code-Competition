@@ -1,2 +1,6 @@
-Document/*
 *.pyc
+*.pdf
+*.exe
+Document/*
+*.pyc~
+*.gitignore~
