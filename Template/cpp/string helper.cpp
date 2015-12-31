@@ -34,3 +34,12 @@ std::vector<std::string> tokenize(std::string s, std::string delim) {
 std::string t = "sdfsdfsdfdfsdfsdfdfdfd";
 t[0] = toupper(t[0]);
 std::cout << t;
+
+//Get permutation
+char tmp[50] = "abaacb";
+std::next_permutation(tmp, tmp + 6);
+// std::prev_permutation(tmp, tmp + 6);
+for(int i = 0; tmp[i] != '\0'; ++i) {
+	std::cout << tmp[i];
+}
+std::cout << std::endl;
