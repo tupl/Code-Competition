@@ -11,11 +11,10 @@ typedef vector<ii> vii;
 typedef vector<int> vi;
 const int DFS_BLACK = 1;
 const int DFS_WHITE = 0;
-
 vector<vii> AdjList;
-
 vi dfs_num; // mark the vertices
 vi dfs_mark; // comes from what vertices
+
 void dfs(int u) {
 	dfs_num[u] = DFS_BLACK;
 	for(int j = 0; j < (int)AdjList[u].size(); ++j) {
