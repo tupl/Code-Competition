@@ -11,18 +11,17 @@ typedef vector<ii> vii;
 typedef vector<int> vi;
 const int DFS_BLACK = 1;
 const int DFS_WHITE = 0;
-vector<vii> AdjList;
 
-int numCC; // number of connected components
-vi dfs_num;
-int V, E; // number of vertices, edges
+vector<vii> AdjList;
+vi dfs_num; // mark the vertices
+vi dfs_mark; // comes from what vertices
 
 void dfs(int u) {
 	dfs_num[u] = DFS_BLACK;
-	printf("%d ", u);
 	for(int j = 0; j < (int)AdjList[u].size(); ++j) {
 		ii v = AdjList[u][j];
 		if (dfs_num[v.first] == DFS_WHITE) {
+			dfs_mark[v.first] = u;
 			dfs(v.first);
 		}
 	}
