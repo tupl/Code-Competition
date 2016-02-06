@@ -1,8 +1,5 @@
 ## Code Competition ##
 
-
-----------
-
 The purpose of this repository is to help the learning
 of algorithm by taking a look at its implementation and
 various competitions. The repository will be updated
