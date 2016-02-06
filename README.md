@@ -8,22 +8,16 @@ for this one so other programmer can easily find what
 they need. Anyways, that's for the future
 
 The repository will be divided into two basic parts
-+Basic folder: Implementation of algorithms in python
-    - Convex Hull
++Basic folder: Implementation of algorithms in python/cpp/java
 	Incremental algorithm
 	Graham scan (Coming soon)
 	Divide and conquer(Coming soon)
 	Gift Wrapping (Coming soon)
+	Graph
 +Template folder: short implementation of all algorithm
     in language including c++, python, java. The purpose
     of this one is for quick typing the algorithm to apply
     for a problem to come up with quick solution.
-	
-    Structure:
-       cpp
-          bit manipulation
-		
-
 +Competition folder:
     Code for various programming competition written
 	in python, java, c with solutions (Maybe good or bad)
