@@ -1,4 +1,5 @@
 // https://www.quora.com/Can-topological-sorting-be-done-using-BFS
+// this algorithm also find the least/best lexicographical topological ordering
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -15,6 +16,15 @@ int V, E;
 vi in_count;
 vi topo;
 
+class mycomparison
+{
+public:
+  bool operator() (const int& lhs, const int&rhs) const
+  {
+    return (lhs>rhs);
+  }
+};
+
 void topoSort() {
 	in_count.assign(V, 0);
 	for(int i = 0; i < (int) AdjList.size(); ++i) {
@@ -23,24 +33,24 @@ void topoSort() {
 			++ in_count[v.first];
 		}
 	}
-	queue<int> q;
+	priority_queue<int, vector<int>, mycomparison> q;
 	for(int i = 0; i < (int) in_count.size(); ++i) {
 		if (in_count[i] == 0) {
 			q.push(i);
-			topo.push_back(i);
 		}
 	}
+
 	while(!q.empty()) {
-		int v = q.front(); q.pop();
+		int v = q.top(); q.pop();
+		topo.push_back(v);
 		for(int i = 0; i < (int) AdjList[v].size(); ++i) {
 			ii ll = AdjList[v][i];
 			int newv = ll.first;
 			-- in_count[newv];
 			if (in_count[newv] == 0) {
 				q.push(newv);
-				topo.push_back(newv);
 			}
-		}
+		}	
 	}
 }
 
