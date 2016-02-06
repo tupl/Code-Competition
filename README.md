@@ -21,9 +21,7 @@ The repository will be divided into two basic parts
 - Divide and conquer(Coming soon)
 - Gift Wrapping (Coming soon)
 - Graph algorithm
-
-
-# Template folder: (will be removed soon) # 
+- Template
 
 # Competition folder: #
 Code for various programming competition written
