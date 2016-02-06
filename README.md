@@ -13,10 +13,6 @@ they need. Anyways, that's for the future
 
 The repository will be divided into two basic parts
 # Basic folder: #
-
-
-----------
-
 - Graham scan (Coming soon)
 - Divide and conquer(Coming soon)
 - Gift Wrapping (Coming soon)
