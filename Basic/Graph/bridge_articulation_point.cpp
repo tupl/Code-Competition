@@ -11,7 +11,7 @@ typedef pair<int, int> ii;
 typedef vector<ii> vii;
 vector<vii> AdjList;
 int V, E;
-const int DFS_WHITE = 0;
+const int DFS_WHITE = -1;
 const int DFS_BLACK = 1;
 vi dfs_low, dfs_num, dfs_parent;
 vector<bool> articulation_vertex;
