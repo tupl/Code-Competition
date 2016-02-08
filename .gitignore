@@ -1,8 +1,3 @@
-*.pyc
-a.out
-*.pdf
 *.exe
-Document/*
-*.pyc~
-*.gitignore~
-rlt
+*.out
+document/*
