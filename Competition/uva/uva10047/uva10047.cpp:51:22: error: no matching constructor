@@ -1,0 +1,87 @@
+uva10047.cpp:51:22: error: no matching constructor for initialization of 'State'
+                children.push_back(State(ii(next_x, next_y), s.dire, next_color(s.color)));
+                                   ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+uva10047.cpp:12:8: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 3 were
+      provided
+struct State
+       ^
+uva10047.cpp:12:8: note: candidate constructor (the implicit default constructor) not viable: requires 0 arguments, but 3 were
+      provided
+uva10047.cpp:53:21: error: no matching constructor for initialization of 'State'
+        children.push_back(State(s.posi, next_direction(s.dire, 0), s.color));
+                           ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+uva10047.cpp:12:8: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 3 were
+      provided
+struct State
+       ^
+uva10047.cpp:12:8: note: candidate constructor (the implicit default constructor) not viable: requires 0 arguments, but 3 were
+      provided
+uva10047.cpp:54:21: error: no matching constructor for initialization of 'State'
+        children.push_back(State(s.posi, next_direction(s.dire, 1), s.color));
+                           ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+uva10047.cpp:12:8: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 3 were
+      provided
+struct State
+       ^
+uva10047.cpp:12:8: note: candidate constructor (the implicit default constructor) not viable: requires 0 arguments, but 3 were
+      provided
+uva10047.cpp:55:9: error: no viable conversion from 'vector<State> (State)' to 'vector<State>'
+        return next_states;
+               ^~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/vector:565:5: note: 
+      candidate constructor not viable: no known conversion from 'vector<State> (State)' to 'const std::__1::vector<State,
+      std::__1::allocator<State> > &' for 1st argument
+    vector(const vector& __x);
+    ^
+uva10047.cpp:61:10: error: assigning to 'mapped_type' (aka 'int') from incompatible type 'map<State, int>'
+        dist[s] = dist;
+                ^ ~~~~
+uva10047.cpp:99:23: error: no matching constructor for initialization of 'State'
+                bool rlt = sssp_bfs(State(ii(fr_x, fr_y), 0, 0) ;
+                                    ^     ~~~~~~~~~~~~~~~~~~~~
+uva10047.cpp:12:8: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 3 were
+      provided
+struct State
+       ^
+uva10047.cpp:12:8: note: candidate constructor (the implicit default constructor) not viable: requires 0 arguments, but 3 were
+      provided
+uva10047.cpp:111:2: error: expected ';' at end of declaration
+}
+ ^
+ ;
+uva10047.cpp:111:2: error: expected '}'
+uva10047.cpp:85:19: note: to match this '{'
+        while(!fi.eof()) {
+                         ^
+uva10047.cpp:111:2: error: expected '}'
+}
+ ^
+uva10047.cpp:82:13: note: to match this '{'
+void test() {
+            ^
+In file included from uva10047.cpp:2:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:628:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:604:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iterator:343:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__functional_base:63:21: error: 
+      invalid operands to binary expression ('const State' and 'const State')
+        {return __x < __y;}
+                ~~~ ^ ~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:1207:17: note: in
+      instantiation of member function 'std::__1::less<State>::operator()' requested here
+            if (__tree_.value_comp().key_comp()(__k, __nd->__value_.__cc.first))
+                ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:1376:36: note: in
+      instantiation of member function 'std::__1::map<State, int, std::__1::less<State>, std::__1::allocator<std::__1::pair<const
+      State, int> > >::__find_equal_key' requested here
+    __node_base_pointer& __child = __find_equal_key(__parent, __k);
+                                   ^
+uva10047.cpp:61:6: note: in instantiation of member function 'std::__1::map<State, int, std::__1::less<State>,
+      std::__1::allocator<std::__1::pair<const State, int> > >::operator[]' requested here
+        dist[s] = dist;
+            ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/utility:424:1: note: 
+      candidate template ignored: could not match 'pair<type-parameter-0-0, type-parameter-0-1>' against 'const State'
+operator< (const pair<_T1,_T2>& __x, const pair<_T1,_T2>& __y)
+^
+11 errors generated.
