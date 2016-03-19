@@ -1,3 +1,4 @@
+//@keyword floyd_warshall, all_pair_shortest_path, basic
 #include <iostream>
 #include <fstream>
 #include <queue>
