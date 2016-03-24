@@ -1,0 +1,15 @@
+1
+6
+a b
+a c
+b e
+c d
+g h
+h i
+6
+a b
+b e
+a c
+c d
+d i
+g h
