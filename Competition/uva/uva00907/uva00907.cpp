@@ -23,6 +23,7 @@ int solve(int posi, int n_left) {
 		}
 		return total;
 	}
+	if (posi == nCamp) return 0;
 	if (cost[posi][n_left] != -1) return cost[posi][n_left];
 	int ans = INF;
 	int range = 0;
