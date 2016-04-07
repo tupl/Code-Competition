@@ -1,0 +1,17 @@
+3
+2
+0 fuel_consumption 10
+100 goal
+3
+0 fuel_consumption 5
+100 fuel_consumption 30
+200 goal
+8
+0 fuel_consumption 20
+10 leak
+25 leak
+25 fuel_consumption 30
+50 gas_station
+70 mechanic
+100 leak
+120 goal

@@ -1,0 +1,16 @@
+const double EPS = 1e-10
+
+bool can(double f) {
+	
+}
+
+double low = 0.0, hi = 10000.0, mid = 0.0, ans = 0.0;
+while((high - low) > EPS) {
+	mid = (low + high)/2;
+	if (can(mid)) {
+		ans = mid;
+		high = mid;
+	} else {
+		low = mid;
+	}
+}
